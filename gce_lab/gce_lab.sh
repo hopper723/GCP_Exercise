@@ -18,4 +18,4 @@ startup_script_path=gce_startup_script.sh
 gcloud compute instances create your-vm-name --machine-type=f1-micro \
        --metadata=lab-logs-bucket=$bucket_path \
        --metadata-from-file=startup-script=$startup_script_path \
-       --scopes https://www.googleapis.com/auth/devstorage.full_control
+       --scopes=default,storage-rw

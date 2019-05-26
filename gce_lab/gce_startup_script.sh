@@ -18,14 +18,14 @@ apt-get update
 # https://cloud.google.com/logging/docs/agent/installation
 #
 curl -sSO https://dl.google.com/cloudagents/install-logging-agent.sh
-sudo bash install-logging-agent.sh
+bash install-logging-agent.sh
 
 
 #
 # Install and run the "stress" tool to max the CPU load for a while.
 #
-sudo apt-get install stress
-stress -c 8 -t 120 &
+apt-get install stress
+stress -c 8 -t 120
 
 
 #
